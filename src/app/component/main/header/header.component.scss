@@ -1,0 +1,62 @@
+@import '../../../../styles.scss';
+.driver-btn {
+  float: right;
+  padding: 11px 20px;
+  color: white;
+  background: #f3721f;
+  border-radius: 27px;
+  margin-top: 13px;
+
+}
+.register-div {
+  display: flex;
+  justify-content: flex-end;
+  background: lightblue;
+}
+.btn-register {
+  color: white;
+  background: transparent;
+  padding: 7px 15px;
+  border-radius: 26px;
+  border: 2px solid #f4711f;
+}
+.btn-register:hover {
+  background: #f4711f;
+
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 20px;
+
+  @include mobile {
+    display: block;
+  }
+}
+.navbar-item {
+  background: blanchedalmond;
+  font-weight: bold;
+}
+.navbar-a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.active {
+  background: #f4711f;
+  color:white;
+  border: none;
+}
+.navbar-item:focus {
+  outline: none;
+}
+.logo-img {
+  width: 100%;
+}
+.navbar-btn{
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #008fd4;
+  float: right;
+}

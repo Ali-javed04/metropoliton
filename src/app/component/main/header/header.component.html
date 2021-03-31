@@ -1,0 +1,47 @@
+
+<div class="container-fluid">
+  <!-- ist part  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <img class="logo-img" src="{{logo}}">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <button class="driver-btn">Driver Apply Know</button>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd part  -->
+  <div class="row register-div" *ngIf="currentState('home')">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <button class="btn-register">Driver SignIn</button>
+      <button class="btn-register ml-4">Customer SignIn</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <button class="navbar-btn d-sm-block d-lg-none d-md-none" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+      	 <div class="collapse navbar-collapse d-lg-block d-md-block" id="nvbCollapse">
+      <ul class="navbar">
+
+        <li class="navbar-item p-4"  [ngClass]="{'active': currentState('home')}"  [routerLink]="['/']" routerLinkActive="router-link-active">
+          <a class="navbar-a" >Home</a></li>
+        <li class="navbar-item p-4" [ngClass]="{'active': currentState('about')}" [routerLink]="['/about']" routerLinkActive="router-link-active">
+          <a class="navbar-a"  >About Us</a></li>
+        <li class="navbar-item p-4" [ngClass]="{'active': currentState('drivers')}"  [routerLink]="['/drivers']" routerLinkActive="router-link-active">
+          <a class="navbar-a" >Drivers</a></li>
+        <li class="navbar-item p-4" [ngClass]="{'active': currentState('customers')}" [routerLink]="['/customers']" routerLinkActive="router-link-active">
+          <a class="navbar-a"  >Customers</a></li>
+        <li class="navbar-item p-4" [ngClass]="{'active': currentState('contact')}" [routerLink]="['/contact']" routerLinkActive="router-link-active">
+          <a class="navbar-a"  >Contact Us</a></li>
+        <li class="navbar-item p-4" [ngClass]="{'active': currentState('store')}" [routerLink]="['/store']" routerLinkActive="router-link-active">
+          <a class="navbar-a"  >Company Store</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+</div>
+
