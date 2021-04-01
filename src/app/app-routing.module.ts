@@ -6,6 +6,7 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
 import { CustomersComponent } from './component/customers/customers.component';
 import { DriversComponent } from './component/drivers/drivers.component';
 import { HomeComponent } from './component/home/home.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
     { path:'', component:HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path:'customers', component:CustomersComponent },
     { path:'contact', component:ContactUsComponent },
     { path:'store', component:CompanyStoreComponent },
+    { path:'register', component:RegistrationComponent },
 ];
 
 @NgModule({

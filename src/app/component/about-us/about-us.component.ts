@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
+  showDiv: number = 1
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  showDIV(num) {
+    this.showDiv = num
+  }
 }

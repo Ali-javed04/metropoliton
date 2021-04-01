@@ -1,1 +1,36 @@
-<p>about-us works!</p>
+
+<div class="container-fluid">
+    <div class="row main-div">
+        <div class="col-3">
+            <button class="histroy-btn"[ngClass]="{'active': showDiv ==1}" (click)="showDIV(1)">Histroy</button>
+        </div>
+        <div class="col-3">
+            <button class="histroy-btn"[ngClass]="{'active': showDiv ==2}" (click)="showDIV(2)">Our Team</button>
+        </div>
+        <div class="col-3">
+            <button class="histroy-btn"  [ngClass]="{'active': showDiv ==3}" (click)="showDIV(3)">Community</button>
+        </div>
+        <div class="col-3">
+            <button class="histroy-btn"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustanbiltiy</button>
+        </div>
+    </div>
+    <div class="row" *ngIf="showDiv ==1">
+        <div class=" col-12 text-center mt-4 mb-4">
+            <img src="/assets/histroypic.gif" alt="">
+            <h2 class="mt-4 histroy-h">Proud Histroy</h2>
+
+        </div>
+
+    
+    </div>
+    <div class="row" *ngIf="showDiv ==2">
+     our team
+    </div>
+    <div class="row" *ngIf="showDiv ==3">
+    commuinty
+    </div>
+    <div class="row" *ngIf="showDiv ==4">
+    Sustanbiltiy
+    </div>
+</div>
+

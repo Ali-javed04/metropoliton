@@ -26,5 +26,8 @@ export class HeaderComponent implements OnInit {
   currentState(url:string): boolean {
     return this.currenturl.includes(url)
    }
+   driverApply() {
+     this.router.navigate(['/register'])
+   }
 
 }
