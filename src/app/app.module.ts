@@ -15,6 +15,21 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
 import { CompanyStoreComponent } from './component/company-store/company-store.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RegistrationComponent } from './registration/registration.component';
+import firebase from 'firebase';
+
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAAwuSIW39GpY7n7XALI3m2kXYhoCke3Ng",
+  authDomain: "isway-mkrt-websites.firebaseapp.com",
+  projectId: "isway-mkrt-websites",
+  storageBucket: "isway-mkrt-websites.appspot.com",
+  messagingSenderId: "762069750000",
+  appId: "1:762069750000:web:a04c283973890963263235",
+  measurementId: "G-GJ5JY5ZEY7"
+};
+
+firebase.initializeApp(firebaseConfig);
+
 
 @NgModule({
   declarations: [
