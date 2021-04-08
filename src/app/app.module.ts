@@ -15,6 +15,7 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
 import { CompanyStoreComponent } from './component/company-store/company-store.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RegistrationComponent } from './registration/registration.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RegistrationComponent } from './registration/registration.component';
     AppRoutingModule,
     FormsModule,
     SlickCarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
