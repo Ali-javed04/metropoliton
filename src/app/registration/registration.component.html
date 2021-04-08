@@ -1,8 +1,7 @@
 
 <div class="container-fluid mt-4 mb-4">
-  <h2 style="margin-bottom: 50px;" class="text-center">APPLICATION FOR EMPLOYMENT </h2>
 
-<div  class="container mb-4 mt-4 ">
+<div class="container mb-4 mt-4 ">
     <div class="row">
         <h3>ApplicationDate:</h3>
         <h3 class="ml-4 date-h">{{currentDate | date:'yyyy-MM-dd'}}</h3>
@@ -12,7 +11,7 @@
 <div class="container mb-4 mt-4 personal-div">
     <div class="col-lg-4 col-md-6 col-sm-12">
 
-        <h3 > Personal Information</h3>
+        <h1 class="text-center"> Personal Information</h1>
     </div>
 </div>
 
@@ -21,7 +20,7 @@
     <form [formGroup]="registerForm" (ngSubmit)="savePersonalDetail()">
         <!-- ist row -->
         <div class="form-row">
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>First Name</label>
             <input type="text" formControlName="firstname" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" placeholder="First Name" />
@@ -29,7 +28,7 @@
               <div *ngIf="f.firstname.errors.required">First Name is required</div>
             </div>
           </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Middle Name</label>
             <input type="text" formControlName="middlename" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.middlename.errors }"  placeholder="Middle Name"  />
@@ -37,7 +36,7 @@
               <div *ngIf="f.middlename.errors.required">Middle Name is required</div>
             </div>
           </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Last Name</label>
             <input type="text" formControlName="lastname" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }"  placeholder="Last Name"  />
@@ -48,7 +47,7 @@
         </div>
         <!-- 2nd row -->
         <div class="form-row">
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Date of Birth</label>
             <input type="date" formControlName="dateOfBirth" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.dateOfBirth.errors }" />
@@ -58,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Social Security</label>
             <input type="number" formControlName="socialSecurity" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.socialSecurity.errors }" placeholder="Social Security Number Without Dishes" />
@@ -66,10 +65,10 @@
               <div *ngIf="f.socialSecurity.errors.required">Social Security is required</div>
             </div>
           </div>
-          <div class="form-group col">
-            <label> Conform Social Security</label>
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
+            <label> Confirm Social Security</label>
             <input type="number" formControlName="cSocialSecurity" class="form-control"
-              [ngClass]="{ 'is-invalid': submitted && f.socialSecurity.errors }" placeholder="Conform Social Security Number" />
+              [ngClass]="{ 'is-invalid': submitted && f.socialSecurity.errors }" placeholder="Confirm Social Security Number" />
             <div *ngIf="submitted && f.socialSecurity.errors" class="invalid-feedback">
               <div *ngIf="f.socialSecurity.errors.required">Social Security is required</div>
             </div>
@@ -77,7 +76,7 @@
         </div>
         <!-- 3rd row -->
         <div class="form-row">
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Home Telephone</label>
             <input type="text" formControlName="telephoneNumber" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.telephoneNumber.errors }"  placeholder="Telephone Number"  />
@@ -85,7 +84,7 @@
               <div *ngIf="f.telephoneNumber.errors.required">Telephone Number is required</div>
             </div>
           </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Cell Phone</label>
             <input type="text" formControlName="mobileNumber" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.mobileNumber.errors }"  placeholder="Cell Number"  />
@@ -93,7 +92,7 @@
               <div *ngIf="f.mobileNumber.errors.required">Cell Number is required</div>
             </div>
           </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Email</label>
             <input type="email" formControlName="email" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  placeholder="Email"  />
@@ -106,16 +105,16 @@
         <!-- fourth row -->
         <div class="form-row">
 
-            <div class="form-group col">
-                <label>Email</label>
+            <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                <label> Confirm Email</label>
                 <input type="email" formControlName="cEmail" class="form-control"
-                  [ngClass]="{ 'is-invalid': submitted && f.cEmail.errors }"   placeholder="Conform Email" />
+                  [ngClass]="{ 'is-invalid': submitted && f.cEmail.errors }"   placeholder="Confirm Email" />
                 <div *ngIf="submitted && f.cEmail.errors" class="invalid-feedback">
                   <div *ngIf="f.cEmail.errors.required">Email is required</div>
                   <div *ngIf="f.cEmail.errors.email">Email must be a valid email address</div>
                 </div>
                 </div>
-                <div class="form-group col">
+                <div class="form-group col-lg-4 col-md-6 col-sm-12">
                     <label>Contact Via</label>
                     <select formControlName="contactVia" class="form-control"
                       [ngClass]="{ 'is-invalid': submitted && f.contactVia.errors }" >
@@ -127,7 +126,7 @@
                       <div *ngIf="f.contactVia.errors.required">Contact Via is required</div>
                     </div>
                   </div>
-                  <div class="form-group col">
+                  <div class="form-group col-lg-4 col-md-6 col-sm-12">
                     <label>Best Time To Contact</label>
                     <select formControlName="bestTime" class="form-control"
                       [ngClass]="{ 'is-invalid': submitted && f.bestTime.errors }" >
@@ -142,7 +141,7 @@
         </div>
         <!-- 5th row -->
         <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-lg-4 col-md-6 col-sm-12">
                 <label>How did you hear about us?:</label>
                 <select formControlName="hear" class="form-control"
                   [ngClass]="{ 'is-invalid': submitted && f.hear.errors }">
@@ -154,7 +153,7 @@
                   <div *ngIf="f.hear.errors.required">Hear is required</div>
                 </div>
               </div>
-          <div class="form-group col">
+          <div class="form-group col-lg-4 col-md-6 col-sm-12">
             <label>Detail</label>
             <input type="text" formControlName="detail" class="form-control"
               [ngClass]="{ 'is-invalid': submitted && f.detail.errors }"  placeholder="Detail(newspaper, radio,person etc)"  />

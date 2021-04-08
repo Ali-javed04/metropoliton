@@ -1,0 +1,45 @@
+
+@import '../../../styles.scss';
+.main-div {
+    background: #f3721f;;
+}
+.actives {
+  background: rgb(37, 153, 95);
+}
+.histroy-btn {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+}
+.histroy-h {
+  color: brown;
+}
+.community-a {
+  overflow: hidden;
+    overflow-wrap: anywhere;
+
+}
+.work-h {
+  justify-content: center;
+  display: flex;
+}
+.head-b {
+  font-weight: bold !important;
+  font-style: bold !important;
+
+}
+.main-marquee {
+  background-color: blanchedalmond;
+  color: black;
+  font-weight: bold;
+
+}
+.common-h {
+  width: 100%;
+
+}
+.main-h {
+  color: #333b9f;
+}

@@ -2,35 +2,102 @@
 <div class="container-fluid">
     <div class="row main-div">
         <div class="col-3">
-            <button class="histroy-btn"[ngClass]="{'active': showDiv ==1}" (click)="showDIV(1)">Histroy</button>
+            <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==1}" (click)="showDIV(1)">Histroy</button>
         </div>
         <div class="col-3">
-            <button class="histroy-btn"[ngClass]="{'active': showDiv ==2}" (click)="showDIV(2)">Our Team</button>
+            <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==2}" (click)="showDIV(2)">Our Team</button>
         </div>
         <div class="col-3">
-            <button class="histroy-btn"  [ngClass]="{'active': showDiv ==3}" (click)="showDIV(3)">Community</button>
+            <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==3}" (click)="showDIV(3)">Community</button>
         </div>
         <div class="col-3">
-            <button class="histroy-btn"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustanbiltiy</button>
+            <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustanbiltiy</button>
         </div>
     </div>
+    <!-- histroy portion  -->
     <div class="row" *ngIf="showDiv ==1">
         <div class=" col-12 text-center mt-4 mb-4">
-            <img src="/assets/histroypic.gif" alt="">
+            <img src="/assets/histroypic.gif" alt="" class="histroy-img" >
             <h2 class="mt-4 histroy-h">Proud Histroy</h2>
+        </div>
+        <div class="container">
+          <div class="row mt-4 mb-4">
+            <p>With only a dream and almost no resources Metropolitan Trucking saw its beginnings in 1930. Straight out of the Pennsylvania coal mines and into a truck, Nicholas Mangino started his own company hauling coal from Pennsylvania into the metropolitan New Jersey and New York markets.
+            </p>
+            <p>
+              Today, over 85 years later and still privately owned - third generation Joseph Mangino Jr., continues to carry his grandfather’s dream forward.</p>
+              <p>As a regional and over-the-road dry van truckload carrier Joe and all Metropolitan employees take pride in a culture of caring as a family. That culture of caring has never changed. MTI professional drivers, internal employees, maintenance technicians, and management still live in a culture of care. Care for each other, their customers and their company.
+              </p>
+              <p class="mb-4">This has resulted in relationships with many customers that are decades long while continuing to grow with new customers. Today with revenues in excess of $75,000,000 annually and one of the newest and most technologically advanced fleets on the road, MTI continues to grow through the level of service they provide customers and in which they take pride.</p>
+          </div>
+        </div>
+    </div>
+    <!-- our team portion -->
+    <div class="row" *ngIf="showDiv ==2">
+      <div class="container-fluid section-doctor">
+        <div class="section-header text-center">
+            <h4 class="mainhead">Our Senior Team</h4>
+            <span>These Member are play Important role in our Success</span>
+        </div>
+        <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-3 mt-4"  *ngFor="let member of TeamMembers" >
+              <div class="profile-widget">
+                  <div class="doc-img">
+                   <img src="{{member.profileImage }}"alt="" class="">
+                    <a ><i class="fa fa-bookmark fav-btn" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="pro-content mt-4">
+                    <h2 class="titles">{{member.name}}</h2>
+                    <h2 class="title">{{member.occuption}}</h2>
+                    <p class="specility" style="font-weight: 100; font-size: 13px; line-height: 21px; ">{{member.description}}</p>
+
+                  </div>
+                </div>
+          </div>
 
         </div>
+        </div>
 
-    
+      </div>
     </div>
-    <div class="row" *ngIf="showDiv ==2">
-     our team
-    </div>
+    <!-- community portion  -->
     <div class="row" *ngIf="showDiv ==3">
-    commuinty
+    <div class="container-fluid mt-4">
+      <div class="section-header text-center">
+        <h4 class="mainhead">We Care Community Involnment</h4>
     </div>
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-6" *ngFor="let community of communitys">
+          <div class="profile-widget">
+            <div class="doc-img">
+              <img src="{{community.image }}"alt="" class="">
+               <a ><i class="fa fa-bookmark fav-btn" aria-hidden="true"></i></a>
+             </div>
+             <div class="pro-content mt-3">
+               <h2>{{community.name}}</h2>
+               <a class="community-a" href="{{community.url}}">{{community.url}}</a>
+             </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- sustanbility portion  -->
     <div class="row" *ngIf="showDiv ==4">
-    Sustanbiltiy
+      <div class="container-fluid mt-4 mb-4">
+        <div class="section-header text-center">
+          <h4 class="mainhead  mb-4">Sustanbiltiy</h4>
+          <img src="/assets/certificate.png" alt="" class="histroy-img">
+      </div>
+      <div class="container">
+
+      </div>
+      </div>
+
     </div>
 </div>
 

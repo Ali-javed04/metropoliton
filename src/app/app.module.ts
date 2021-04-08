@@ -30,6 +30,7 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ firebase.initializeApp(firebaseConfig);
     AppRoutingModule,
     FormsModule,
     SlickCarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
