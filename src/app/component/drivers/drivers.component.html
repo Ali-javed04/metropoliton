@@ -2,27 +2,27 @@
 <div class="container-fluid">
   <div class="row main-div">
     <div class="col">
-      <button class="histroy-btn community-a" [ngClass]="{'actives':showDivs === 1}"
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 1}"
         (click)="showDIV(1)">Welcome</button>
     </div>
     <div class="col">
-      <button class="histroy-btn community-a" [ngClass]="{'actives':showDivs === 2}"
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 2}"
         (click)="showDIV(2)">Qualitfications</button>
     </div>
     <div class="col">
-      <button class="histroy-btn community-a" [ngClass]="{'actives':showDivs === 3}" (click)="showDIV(3)">Pay</button>
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 3}" (click)="showDIV(3)">Pay</button>
     </div>
     <div class="col">
-      <button class="histroy-btn community-a" [ngClass]="{'actives':showDivs === 4}"
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 4}"
         (click)="showDIV(4)">Programs</button>
     </div>
     <div class="col">
-      <button class="histroy-btn community-a" [ngClass]="{'actives':showDivs === 5}"
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 5}"
         (click)="showDIV(5)">Benefits</button>
     </div>
   </div>
   <!-- welcome portion  -->
-  <div class="row" *ngIf="showDivs == 1">
+  <div class="row" *ngIf="showDiv == 1">
     <div class="container">
       <div class="row work-h mt-4 mb-4">
         <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
@@ -79,7 +79,7 @@
 
   </div>
   <!-- Qualification portion -->
-  <div class="row" *ngIf="showDivs == 2">
+  <div class="row" *ngIf="showDiv == 2">
     <div class="container">
       <div class="row work-h mt-4 mb-4">
         <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
@@ -121,7 +121,7 @@
     </div>
   </div>
   <!-- PAy portion -->
-  <div class="row" *ngIf="showDivs == 3">
+  <div class="row" *ngIf="showDiv == 3">
     <div class="container mt-4 mb-4">
       <div class="row main-marquee">
         <marquee behavior="" direction="" class="marquee-h">Metropolitan We Care consistent Pay Packages</marquee>
@@ -258,7 +258,7 @@
     </div>
   </div>
   <!-- Programs portion -->
-  <div class="row" *ngIf="showDivs == 4">
+  <div class="row" *ngIf="showDiv == 4">
     <div class="container">
       <div class="row work-h mt-4 mb-4">
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 ">
@@ -334,7 +334,7 @@
 
   </div>
   <!-- Benefits portion -->
-  <div class="row" *ngIf="showDivs == 5">
+  <div class="row" *ngIf="showDiv == 5">
       <div class="container">
         <div class="row work-h mt-4 mb-4">
           <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">

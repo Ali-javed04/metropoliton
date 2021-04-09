@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversComponent implements OnInit {
 
-  showDivs: number = 1
+  showDiv: number = 1
+
+
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
   showDIV(num) {
-    this.showDivs = num
+    this.showDiv = num
   }
 }
