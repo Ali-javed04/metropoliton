@@ -14,7 +14,6 @@ import { CustomersComponent } from './component/customers/customers.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
 import { CompanyStoreComponent } from './component/company-store/company-store.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import firebase from 'firebase';
 
 
 var firebaseConfig = {
