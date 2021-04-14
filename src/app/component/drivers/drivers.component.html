@@ -1,1 +1,383 @@
-<p>drivers works!</p>
+
+<div class="container-fluid">
+  <div class="row main-div">
+    <div class="col">
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 1}"
+        (click)="showDIV(1)">Welcome</button>
+    </div>
+    <div class="col">
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 2}"
+        (click)="showDIV(2)">Qualitfications</button>
+    </div>
+    <div class="col">
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 3}" (click)="showDIV(3)">Pay</button>
+    </div>
+    <div class="col">
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 4}"
+        (click)="showDIV(4)">Programs</button>
+    </div>
+    <div class="col">
+      <button class="histroy-btn community-a" [ngClass]="{'active':showDiv === 5}"
+        (click)="showDIV(5)">Benefits</button>
+    </div>
+  </div>
+  <!-- welcome portion  -->
+  <div class="row" *ngIf="showDiv == 1">
+    <div class="container">
+      <div class="row work-h mt-4 mb-4">
+        <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
+          <h2 class="main-h">Why Work For Metropolitan?</h2>
+        </div>
+      </div>
+      <div class="row mt-4 mb-4">
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li class="mt-4 mb-4">
+              <h5>Leading Pay Packages including a Minimum Pay Program</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Home Time to Meet Your Needs</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5> Comprehensive Benefit Packages</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Fleet less than 2 Years Old average</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Assigned Equipment</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Employees who care and communicate</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Family owned and operated for three generations</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 text-center">
+          <img src="/assets/welcome-driver.png" alt="">
+        </div>
+      </div>
+      <div class="row text-center work-h mt-4 mb-4">
+        <img src="/assets/logo-driver.png" alt="">
+      </div>
+      <div class="row mt-4 mb-4">
+        <h5 class="mt-4 mb-4">It won't take long for you to experience our "We Care" attitude. Family is important to us
+          and that is why we are always looking for opportunities to match our driver’s needs as professionals with a
+          lifestyle benefiting both them and their families. At Metropolitan, we are committed to providing an excellent
+          paycheck, while still offering the home time our drivers want and deserve. We also offer the most
+          comprehensive benefit package in the industry today.
+        </h5>
+        <h5 class="mt-4 mb-4">Everyone at Metropolitan understands and appreciates that a driver has the hardest job in
+          our company. Our Company's culture is built around treating everyone with respect. We welcome you to join our
+          family and become a part of the most dynamic team the trucking industry has to offer.
+        </h5>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Qualification portion -->
+  <div class="row" *ngIf="showDiv == 2">
+    <div class="container">
+      <div class="row work-h mt-4 mb-4">
+        <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
+          <h2 class="main-h">Qualification?</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 mb-4">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li class="mt-4 mb-4">
+              <h5>Be at least 23 years old</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Minimum of 6 months recent verifiable tractor trailer experience</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Have a valid class (A) CDL</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Meet DOT requirements</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>Pass a company physical, including substance screening</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>No DWI/DUI convictions(last 5 years)</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>No more than 3 moving violations in 36 months</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5>No major violations in 36 months</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" style="height: 200px;"></div>
+    </div>
+  </div>
+  <!-- PAy portion -->
+  <div class="row" *ngIf="showDiv == 3">
+    <div class="container mt-4 mb-4">
+      <div class="row main-marquee">
+        <marquee behavior="" direction="" class="marquee-h">Metropolitan We Care consistent Pay Packages</marquee>
+      </div>
+      <div class="row mt-4 mb-4">
+        <p><span class="head-b">We believe that</span> when our drivers grow, we grow. We offer a weekly pay as well as a pay per mile highly
+           competitive pay. Our pay structure is
+          one of the best in the market and the best in the Chicago area. </p>
+      </div>
+      <div class="row">
+        <h5>HIGHLIGHTS OF OUR PAY PACKAGE INCLUDE:</h5>
+      </div>
+      <div class="row">
+        <ul>
+          <!-- ist  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                •	$1,250.00 Minimum Pay Program for 5 Day Drivers and $1,000.00 Minimum Pay Program for 4 Day Drivers to
+              </span>
+              allow our drivers to earn a living and care for their families.
+            </p>
+          </li>
+          <!-- 2nd  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Sliding pay per mile rates based on lengths of haul
+              </span>
+              shorter miles equal higher rates per mile paid to the driver. Always a fair wage for a
+              fair day regardless of miles. The average TTT (Tac-Tac Transportation) driver earns an effective average rate per mile, in an average week of over .
+              55 cents per mile
+            </p>
+          </li>
+          <!-- 3rd  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Detention Pay
+              </span>
+            </p>
+            <!-- 4TH  -->
+          </li>
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Stop Off Pay
+              </span>
+            </p>
+          </li>
+          <!-- 5th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Layover Pay
+              </span>
+              when applicable
+            </p>
+          </li>
+          <!-- 6th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Hazardous Material Premium
+              </span>
+              of .10 cents per mile if you have an endorsement and haul a hazmat load
+            </p>
+          </li>
+          <!-- 7th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Company Paid, DOT Physicals
+              </span>
+            </p>
+          </li>
+          <!-- 8th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Company Paid, Hazmat Endorsements </span>
+            </p>
+          </li>
+          <!-- 9th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Pay Based on PCMiler Practical Miles </span>
+            </p>
+          </li>
+          <!-- 10th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Holiday Pay </span>
+              for 6 holidays
+            </p>
+          </li>
+          <!-- 11th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                On Duty Breakdown Pay </span>
+              when applicable
+            </p>
+          </li>
+          <!-- 12th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Vacation Pay </span>
+            </p>
+          </li>
+          <!-- 13th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Safety Bonus </span>
+            </p>
+          </li>
+          <!-- 14th  -->
+          <li class="mt-4 mb-4">
+            <p>
+              <span class="head-b">
+                Referral Bonus </span>
+              – Earn up to $1500.00 for every experienced driver you refer that is hired.
+              500.00 paid 3 weeks after hire, 500.00 paid at 6 weeks and another 500.00 if the driver remains 1 year.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Programs portion -->
+  <div class="row" *ngIf="showDiv == 4">
+    <div class="container">
+      <div class="row work-h mt-4 mb-4">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 ">
+          <h2 class="main-h">Equipment & Driver-Friendly Programs</h2>
+        </div>
+        <!-- ist part  -->
+        <div class="row mt-4 mb-4">
+          <h3>Flexible Home Time</h3>
+          <h5>
+            We value you and your family and that is why TTT has “Family Valued Time” program to allow our drivers to
+            have quality home time and be with their families. TTT has put together a flexible home time plan to fit each fleet:
+          </h5>
+          <ul>
+            <li class="mt-4 mb-4">
+              <h5>Regional drivers are home weekends.</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5> Road drivers are home every other weekend.</h5>
+            </li>
+          </ul>
+        </div>
+        <!-- 2nd part  -->
+        <div class="row mt-4 mb-4">
+          <h3 class="common-h mt-4 mb-4">Family Rider Policy</h3>
+          <h5 class="common-h">
+            The Family Rider Policy allows your qualified family members to ride with you</h5>
+
+          <h4 class="common-h mt-4 mb-4">Pet Policy</h4>
+          <h5 class="common-h">
+            Metropolitan provides a pet policy in the event that you have a dog under 50 pounds. See your instructor at orientation.</h5>
+        </div>
+        <!-- 3rd part  -->
+        <div class="row mt-4 mb-4">
+          <h3 class="common-h">EZPass/I-Pass</h3>
+          <p>Each truck is equipped with EZPass/I-Pass to improve your driving experience</p>
+
+          <h4 class="common-h mt-4 mb-4">24 Hour Road Service</h4>
+          <br>
+          <h5>
+            Metropolitan Trucking provides road service 24 hours per day, 7 days per week in the event you encounter maintenance related issues with your tractor or trailer.</h5>
+           </div>
+           <!-- 4th part  -->
+           <div class="row common-h mt-4 mb-4">
+             <h3 class="common-h">Tractors</h3>
+             <br>
+             <ul>
+              <li class="mt-4 mb-4">
+                <h5>All Tractors are Late Model Freightliners - Less than 2 years on average.</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5> Most Tractors have Satelite Direct TV</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5> Many Tractors have Satelite Radio Service</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5> Many Tractors have Refrigerators</h5>
+              </li>
+            </ul>
+           </div>
+           <!-- 5th part  -->
+           <div class="col-12 mt-4 mb-4">
+             <h3 class="common-h">Trailers</h3>
+             <ul>
+               <li class="mt-4 mb-4">
+                 <h5> New Dry Van Trailer Fleet.</h5>
+               </li>
+               <li class="mt-4 mb-4">
+                 <h5> 	New Wet Trailers</h5>
+               </li>
+             </ul>
+           </div>
+      </div>
+      </div>
+
+
+
+  </div>
+  <!-- Benefits portion -->
+  <div class="row" *ngIf="showDiv == 5">
+      <div class="container">
+        <div class="row work-h mt-4 mb-4">
+          <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
+            <h2 class="main-h">Benefits?</h2>
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-4">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+              <li class="mt-4 mb-4">
+                <h5>•	Health Coverage </h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>•	Prescription Drug Coverage</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>Dental Insurance</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>Company Paid Life Insurance & supplemental Availability</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>401(k) Plan with Company Match</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>Rider policy</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>Short/Long Term Disability Availability</h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>•	Employee Franchise and </h5>
+              </li>
+              <li class="mt-4 mb-4">
+                <h5>Pet Policy</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" style="height: 200px;"></div>
+      </div>
+    </div>
+</div>

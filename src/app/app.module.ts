@@ -7,7 +7,7 @@ import { MainComponent } from './component/main/main.component';
 import { HeaderComponent } from './component/main/header/header.component';
 import { FooterComponent } from './component/main/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { DriversComponent } from './component/drivers/drivers.component';
 import { CustomersComponent } from './component/customers/customers.component';
@@ -28,6 +28,8 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+import { RegistrationComponent } from './registration/registration.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -40,13 +42,16 @@ firebase.initializeApp(firebaseConfig);
     DriversComponent,
     CustomersComponent,
     ContactUsComponent,
-    CompanyStoreComponent
+    CompanyStoreComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

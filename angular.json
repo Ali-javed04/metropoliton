@@ -136,6 +136,6 @@
   },
   "defaultProject": "metropolitan",
   "cli": {
-    "analytics": false
+    "analytics": "b86f425f-cb1d-449a-a1c7-7b2a3741566a"
   }
 }

@@ -1,1 +1,162 @@
-<p>customers works!</p>
+
+<div class="container-fluid">
+  <div class="row main-div">
+      <div class="col-3">
+          <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==1}" (click)="showDIV(1)">Coverage</button>
+      </div>
+      <div class="col-3">
+          <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==2}" (click)="showDIV(2)">Services</button>
+      </div>
+      <div class="col-3">
+          <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==3}" (click)="showDIV(3)">Our Team</button>
+      </div>
+      <div class="col-3">
+          <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustanbiltiy</button>
+      </div>
+  </div>
+  <!-- Coverage portion  -->
+  <div class="row" *ngIf="showDiv ==1">
+    <div class="container">
+      <div class="row mt-4 mb-4">
+        <div class="col-12">
+          <h2 class="text-center main-he">Coverage And Locations</h2>
+        </div>
+       </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <ul>
+              <li class="mt-4 mb-4">
+                <p>
+                <span class="main-h">Long Haul, Over The Road Operation</span>
+                covering Northeastern, Midwest, Southeast and Southwestern U.S.
+                </p>
+              </li>
+              <li class="mt-4 mb-4">
+                <p>
+                <span class="main-h">Regional Operations,</span>
+                with fleets covering the Northeastern and Midwestern U.S.
+                </p>
+              </li>
+              <li class="mt-4 mb-4">
+                <p>
+                <span class="main-h">Dedicated Services</span>
+                including equipment, skilled drivers and technology that is customer specific
+                </p>
+              </li>
+              <li class="mt-4 mb-4">
+                <p>
+                <span class="main-h">Logistic/Brokerage Services,</span>
+                - Offers capacity through relationships with quality carriers & services throught the entire continental U.S. & Canada
+                </p>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-lg-9 col-md-6 col-sm-12">
+            <img src="/assets/coverage.jpg" alt="" width="100%">
+
+          </div>
+    </div>
+
+       </div>
+  </div>
+
+
+  <!-- Services portion -->
+  <div class="row" *ngIf="showDiv ==2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-4 mb-4">
+          <h2 class="text-center main-he">Services And Resourses</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <ul>
+            <li class="mt-4 mb-4">
+              <h5 class=" mt-4 mb-4 pt-4 pb-4">Long Haul, Over The Road</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class=" mt-4 mb-4 pt-4 pb-4">Regional</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="pt-4 pb-4">Dedicated</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">Asset Based Coverage in Eastern US</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">Logistics Service Coverage throught Continental US and Canada</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">Dedicated assigned Customer Service Representatives</h5>
+            </li>
+            <li class="mt-4 mb-4 custom-p">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">375 Late Model Freightliner Tractors</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">1200 Newly built Great Dane 53 ft Dry Van Trailers</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">Fully ELD Compliant</h5>
+            </li>
+            <li class="mt-4 mb-4">
+              <h5 class="mt-4 mb-4 pt-4 pb-4">Leader in Transportation's Newest Technologies</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <img class="mt-4 mb-4" src="/assets/service1.jpg" alt="" width="100%">
+          <img class="mt-4 mb-4"  src="/assets/service2.jpg" alt="" width="100%">
+          <img class="mt-4 mb-4"  src="/assets/service3.jpg" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- our Team portion  -->
+  <div class="row" *ngIf="showDiv ==3">
+    <div class="container-fluid section-doctor">
+      <div class="section-header text-center">
+          <h4 class="mainhead">Our Senior Team</h4>
+          <span>These Member are play Important role in our Success</span>
+      </div>
+      <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-3 mt-4"  *ngFor="let member of TeamMembers" >
+            <div class="profile-widget">
+                <div class="doc-img">
+                 <img src="{{member.profileImage }}"alt="" class="">
+                  <a ><i class="fa fa-bookmark fav-btn" aria-hidden="true"></i></a>
+                </div>
+                <div class="pro-content mt-4">
+                  <h2 class="titles">{{member.name}}</h2>
+                  <h2 class="title">{{member.occuption}}</h2>
+                  <p class="specility" style="font-weight: 100; font-size: 13px; line-height: 21px; ">{{member.description}}</p>
+
+                </div>
+              </div>
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- sustanbility portion  -->
+  <div class="row" *ngIf="showDiv ==4">
+    <div class="container-fluid mt-4 mb-4">
+      <div class="section-header text-center">
+        <h4 class="mainhead  mb-4">Sustanbiltiy</h4>
+        <img src="/assets/certificate.png" alt="" class="histroy-img">
+    </div>
+    <div class="container">
+
+    </div>
+    </div>
+
+  </div>
+</div>
+
+
