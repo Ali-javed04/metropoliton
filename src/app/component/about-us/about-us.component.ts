@@ -11,20 +11,20 @@ export class AboutUsComponent implements OnInit {
   TeamMembers  = [
     {
       profileImage:'/assets/joseph.jpg',
-      name:'Joseph Mangino Jr',
+      name:'Eric Djoukeng, MBA',
       occuption:'President and Owner',
-      description: 'Part of a successful family business for his entire career. Experienced in all aspects of the business and has held senior management roles over 20 years.'
+      description: 'Managing Partner: With over 15 years in corporate finance, Eric Djoukeng has developed over the years the business acumen to help propel Tac-Tac Transportation to the help of Supply Chain consultancy industry.'
     },
     {
       profileImage:'/assets/michael.jpg',
-      name:'Michael A. Maiore',
-      occuption:'Chief Operating Officer',
+      name:'Stephane Feumba',
+      occuption:'Managing Partner',
       description: 'Over 30 years of experience and success in all areas of Operations, Sales, Customer Service, Administration and Compliance. Held Senior positions in transportation over the last 25 years. Joined Metropolitan as EVP in January 2008.'
     },
     {
       profileImage:'/assets/matthew.jpg',
-      name:'Matthew Sullivan',
-      occuption:'Executive Vice President',
+      name:'Daniel Minoue',
+      occuption:'Managing Partner',
       description: 'Joined Metropolitan in January 2007 and has spent 20+ years in Transportation, accounting and finance, administration and management.'
     },
     {
