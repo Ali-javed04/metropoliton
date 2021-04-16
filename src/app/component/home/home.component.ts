@@ -8,10 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   slides = [
-    {img: "assets/smm1.jpg"},
-    {img: "assets/smm2.jpg"},
-    {img: "assets/smm3.jpg" },
-    {img: "assets/smm4.jpg"}
+    {img: "assets/TruckPics1.jpg"},
+    {img: "assets/TruckPics2.jpg"},
+    {img: "assets/TruckPics3.jpg" },
+    {img: "assets/TruckPics4.jpg"},
+    {img: "assets/TruckPics5.jpeg"}
 
   ];
   slideConfig = {
