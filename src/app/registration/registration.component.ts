@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-registration',
@@ -11,7 +12,7 @@ export class RegistrationComponent implements OnInit {
   submitted = false;
   currentDate = new Date();
 
-  constructor(private formBuilder: FormBuilder,) { }
+  constructor(private formBuilder: FormBuilder,private firebaseService: FirebaseService) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -31,14 +32,25 @@ export class RegistrationComponent implements OnInit {
       cEmail: ['', [Validators.required, Validators.email]],
     });
   }
+
   get f() { return this.registerForm.controls; }
+
+
+  getID() {
+    let date = new Date();
+    return 'id' + date.getTime();
+  }
+
   savePersonalDetail() {
     this.submitted = true;
     if (this.registerForm.invalid) {
       return;
     }
     else {
-
+      const user = this.registerForm.value
+      user.id = this.getID();
+      console.log("user ", this.registerForm.value)
+      this.firebaseService.createUser(this.registerForm.value)
     }
   }
 }
