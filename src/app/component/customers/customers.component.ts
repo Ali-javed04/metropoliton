@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomersComponent implements OnInit {
 
-  showDiv: number = 1
+  showDiv: number = 2
 
   TeamMembers  = [
     {

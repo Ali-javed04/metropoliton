@@ -1,35 +1,37 @@
 
 <div class="container-fluid">
     <div class="row main-div">
-        <div class="col-3">
+        <div class="col-4">
             <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==1}" (click)="showDIV(1)">Histroy</button>
         </div>
-        <div class="col-3">
+        <!-- <div class="col-3">
             <button class="histroy-btn community-a"[ngClass]="{'active': showDiv ==2}" (click)="showDIV(2)">Our Team</button>
-        </div>
-        <div class="col-3">
+        </div> -->
+        <div class="col-4">
             <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==3}" (click)="showDIV(3)">Community</button>
         </div>
-        <div class="col-3">
-            <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustanbiltiy</button>
+        <div class="col-4">
+            <button class="histroy-btn community-a"  [ngClass]="{'active': showDiv ==4}" (click)="showDIV(4)">Sustainability</button>
         </div>
     </div>
     <!-- histroy portion  -->
     <div class="row" *ngIf="showDiv ==1">
         <div class=" col-12 text-center mt-4 mb-4">
-            <img src="/assets/histroypic.gif" alt="" class="histroy-img" >
-            <h2 class="mt-4 histroy-h">Proud Histroy</h2>
+            <img style="width: 250px; height: 200px;" src="/assets/TruckPics5.jpeg" alt="" class="histroy-img" >
+            <h2 class="mt-4 histroy-h">Proud History</h2>
         </div>
         <div class="container">
           <div class="row mt-4 mb-4">
-            <p>Tac-Tac Transportation is newly formed transportation company incorporated in the state of Illinois. We specialize in providing over the road dry and wet freight carrier services, supply chain solutions and trucking franchise opportunity. We are your one stop solution to your Supply Chain operation.
+            <p>Tac-Tac Transportation is newly formed transportation company incorporated in the state of Illinois. We specialize in
+               providing over the road dry and wet freight carrier services, supply chain solutions and trucking franchise opportunity.
+               We are your one stop solution to your Supply Chain operation.
 
 
             </p>
             <p>
-              With our innovative approach to logistic services, we have built a transportation company that provides our valued customers with a one point solution to all their logistic and supply chain needs.
+              With our innovative approach to logistic services, we have built a transportation company that provides our valued customers
+              with a one point solution to all their logistic and supply chain needs.
             </p>
-              <p class="mb-4">This has resulted in relationships with many customers that are decades long while continuing to grow with new customers. Today with revenues in excess of $75,000,000 annually and one of the newest and most technologically advanced fleets on the road, MTI continues to grow through the level of service they provide customers and in which they take pride.</p>
           </div>
         </div>
     </div>
